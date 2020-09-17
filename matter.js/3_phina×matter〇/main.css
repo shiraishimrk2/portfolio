@@ -1,0 +1,13 @@
+body {
+    margin-left: 50px;
+}
+
+.canvas_wrapper {
+    position: relative;
+}
+
+.canvas_wrapper canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

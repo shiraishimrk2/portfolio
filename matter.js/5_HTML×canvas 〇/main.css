@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+#canvas_box {
+    height: 850px;
+    position: relative;
+    margin: 0 auto;
+}
+
+canvas {
+    position: absolute;
+    margin-left: 31%;
+}

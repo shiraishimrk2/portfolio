@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+#canvas_box {
+    height: 850px;
+    position: relative;
+    margin: 0 auto;
+}
+
+canvas {
+    position: absolute;
+    margin-left: 30.7%;
+}
+
+/* #matter {
+    pointer-events: none;
+} */
+
+.add_class {
+    display: none;
+}
+
+.scale {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+}
