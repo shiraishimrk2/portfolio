@@ -4,13 +4,12 @@ phina.define("MainScene", {
   superClass: 'DisplayScene',
   init: function () {
     this.superInit();
-    var tamesi = document.getElementById('matter');
     var canvas = document.getElementById('matter');
     var context = canvas.getContext('2d');
     console.log(context);
 
-    if (tamesi.classList.contains('add_class') == true) {
-      tamesi.classList.remove('add_class');
+    if (canvas.classList.contains('add_class') == true) {
+      canvas.classList.remove('add_class');
     }
 
     var background_box = RectangleShape({

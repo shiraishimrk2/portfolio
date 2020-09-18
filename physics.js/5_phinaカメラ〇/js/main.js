@@ -209,8 +209,8 @@ phina.define("Scene02", {
                     //   motion_config.ball_config.ball_pos0.x -= canvas.width;
                     // }
                     if (motion_config.ball_config.ball_pos.x > canvas.width / 2) {
-                        var tamesi = canvas.getContext('2d');
-                        tamesi.translate(-0.4, 0);
+                        var context = canvas.getContext('2d');
+                        context.translate(-0.4, 0);
                     }
 
 
@@ -363,14 +363,14 @@ phina.define("Scene03", {
                     // {
                     //   motion_config.ball_config.ball_pos0.x -= canvas.width;
                     // }
-                    var tamesi = canvas.getContext('2d');
+                    var context = canvas.getContext('2d');
 
                     //ボールが着地したらバウンド
                     if (motion_config.ball_config.ball_pos.y < 10) {
                         motion_config.t = 0;
                         motion_config.ball_config.ball_pos0.x = motion_config.ball_config.ball_pos.x;
                         // motion_config.ball_pos0.v0 - 10;
-                        tamesi.translate(motion_config.ball_config.ball_pos.x, 0);
+                        context.translate(motion_config.ball_config.ball_pos.x, 0);
                         // tamesi.drawImage(canvas, 30, 0);
                     }
                 });
